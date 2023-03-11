@@ -1,5 +1,6 @@
 body {
     background-image: url(https://moon-sheep.github.io/order-summary/pattern-background-desktop.svg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%); 
     display: grid;
@@ -126,5 +127,6 @@ span.price {
 #cancel {
     background-color: transparent;
     color: hsl(224, 23%, 55%);
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
