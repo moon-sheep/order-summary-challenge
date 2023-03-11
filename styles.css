@@ -1,0 +1,130 @@
+body {
+    background-image: url(https://moon-sheep.github.io/order-summary/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%); 
+    display: grid;
+    place-items: center;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* parent container */
+
+main {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 25px;
+    height: 85%;
+    max-width: 100%;
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    /* row-gap: 20px; */
+}
+
+.cover {
+    max-width: 100%;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
+/* title */
+
+h2 {
+    font-weight: 900;
+    padding-top: 25px;
+}
+
+/* description */
+
+span.copy {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: calc(14rem / 16);
+    text-align: center;
+    display: inline-block; /* changes direction to apply align */
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+/* pricing section */
+
+.container {
+    background-color: hsla(224, 23%, 55%, 5%);
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    max-width: 100%;
+    width: 20rem;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.plan {
+    flex-grow: 1;
+    font-weight: 700;
+}
+
+span.price {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.icon {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.change {
+    align-self: center;
+    font-weight: 700;
+    font-size: calc(12rem / 16);
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+/* active state */
+
+.change:hover, #payment, #cancel {
+    cursor: pointer;
+}
+
+.change:active {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 75%);
+}
+
+#payment:active {
+    background-color: hsla(245, 75%, 52%, 75%);
+}
+
+#cancel:active {
+    color: black;
+}
+
+/* buttons */
+
+.buttons {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    border-style: none;
+    margin-top: 20px;
+}
+
+#payment {
+    background-color: hsla(245, 75%, 52%, 80%);
+    max-width: 100%;
+    width: 21.5rem;
+    height: 50px;
+    border-radius: 10px;
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+    letter-spacing: .03em;
+}
+
+#cancel {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    padding-top: 20px;
+}
