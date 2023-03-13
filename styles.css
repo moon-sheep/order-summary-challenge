@@ -6,6 +6,9 @@ body {
     display: grid;
     place-items: center;
     font-family: "Red Hat Display", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 /* parent container */
@@ -13,7 +16,6 @@ body {
 main {
     background-color: hsl(225, 100%, 98%);
     border-radius: 25px;
-    max-height: 90%;
     max-width: 100%;
     width: 27rem;
     display: flex;
